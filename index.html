@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mock Test Dashboard</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Firstbench</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">FirstGuru</a>
+      <a href="#">Town-Hall</a>
+      <a href="#">AI Evaluation</a>
+      <a href="#">Performance</a>
+      <a href="#" class="active">Mock Test</a>
+    </nav>
+    <div class="profile"><h2 style="color:black;margin-left: 12px;">P</h2></div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Result Summary Section -->
+    <section class="result-summary">
+      <h2>Your Result!!</h2>
+      <div class="score-card">
+        <div class="score">
+          <h3>136</h3>
+          <p>Total Score</p>
+        </div>
+        <div class="accuracy">
+          <h3>71%</h3>
+          <p>Accuracy</p>
+        </div>
+      </div>
+      <button class="practice-btn">Practice More</button>
+    </section>
+
+    <!-- Performance Metrics Section -->
+    <section class="performance-metrics">
+      <div class="metric improvements" style="width: 370px;">
+        <h3>Improvements</h3>
+        <p>Subject Understanding</p>
+        <div class="tags" style="text-align: left;">
+          <span style="background-color: rgb(12, 176, 138);">Physics</span>
+          <span style="background-color: #f6ad55">Chemistry</span>
+          <span style="background-color: rgb(135, 25, 195);">Mathematics</span>
+          <span style="background-color: rgb(249, 31, 11);">Geography</span>
+          <span style="background-color: rgb(154, 156, 153);">Current Affairs</span>
+          <span style="background-color: rgb(12, 69, 176);">Politics</span>
+          <span style="background-color: rgb(179, 31, 169);">History</span>
+          <span style="background-color: rgb(12, 176, 138);">Economics</span>
+          <span style="background-color: rgb(154, 156, 153);">English</span>
+          <span style="background-color: rgb(12, 176, 138);">Biology</span>
+          <span style="background-color: rgb(198, 182, 37);">General Studies</span>
+        </div>
+      </div>
+      <div class="metric response-time">
+        <h3>Response Time</h3>
+        <p>60% Accuracy</p>
+        <p class="feedback">You are slow!</p>
+      </div>
+      <div class="metric suggestions">
+        <h3>Suggestions</h3>
+        <p>Based on Facts</p>
+        <p>40 sec (Easy)</p>
+      </div>
+    </section>
+    <!-- Charts Section -->
+    <section class="charts">
+      <div class="chart-container">
+        <h3>Compare Accuracy</h3>
+        <canvas id="accuracyChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Time Taken</h3>
+        <canvas id="timeChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
